@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "manim-weighted-line"
+version = "0.1.0"
+description = "Adds a weighted line object to use with network graph diagrams."
+authors = ["mutable <mutable.learning@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "manim_weighted_line", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."manim.plugins"]
+manim-weighted-line = "manim_weighted_line"
