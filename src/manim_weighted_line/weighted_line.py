@@ -13,6 +13,8 @@ class WeightedLine(Line):
         Dict of options to be passed to :class:`Text`
     weight_alpha
         The alpha position on the edge to show the weight
+    bg_config
+        Dict of options to be passed to :class:`Rectangle`
     add_bg
         Boolean to show a rectangle behind the weight
     kwargs
