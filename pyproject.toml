@@ -2,14 +2,20 @@
 name = "manim-weighted-line"
 version = "0.1.0"
 description = "Adds a weighted line object to use with network graph diagrams."
-authors = ["mutable <mutable.learning@gmail.com>"]
+authors = ["MutableLearning <mutable.learning@gmail.com>"]
 license = "MIT"
 readme = "README.md"
+repository = "https://github.com/mutable-learning/manim-weighted-line"
+keywords = ["manim", "plugins"]
 packages = [{ include = "manim_weighted_line", from = "src" }]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.8,<3.12"
+manim = "^0.17.3"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -17,3 +23,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.plugins."manim.plugins"]
 manim-weighted-line = "manim_weighted_line"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/mutable-learning/manim-weighted-line/issues"
+"Changelog" = "https://github.com/mutable-learning/manim-weighted-line/blob/main/CHANGELOG.md"
