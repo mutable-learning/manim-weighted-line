@@ -61,9 +61,9 @@ class WeightedLine(Line):
             self.bg_config.update(bg_config)
 
         if self.weight is not None:
-            self.update_weight()
+            self._add_weight()
 
-    def update_weight(self, weight: str | int | float | None = None):
+    def _add_weight(self):
         """
         Clears any current weight and then displays the weight is not none.
 
@@ -71,18 +71,9 @@ class WeightedLine(Line):
 
         Use bg_config dict to send options to the background Rectangle object.
 
-        Parameters
-        ----------
-        weight
-            The new weight of the edge to display
-
         """
 
         # Set the new weight if it is present
-        if weight is not None:
-            self.weight = weight
-
-        self.submobjects.clear()
 
         point = self.point_from_proportion(self.alpha)
         label = Text(str(self.weight), **self.weight_config)
