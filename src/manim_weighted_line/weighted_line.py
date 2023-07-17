@@ -1,4 +1,11 @@
-from manim import *
+from typing import Any
+
+from manim import config
+from manim.constants import DEFAULT_FONT_SIZE, ITALIC, SMALL_BUFF
+from manim.mobject.geometry.line import Line
+from manim.mobject.text.text_mobject import Text
+from manim.utils.color import WHITE
+
 
 class WeightedLine(Line):
     """A line to display weighted edges in a network graph.
@@ -54,16 +61,27 @@ class WeightedLine(Line):
             self.bg_config.update(bg_config)
 
         if self.weight is not None:
-            self.display_weight()
+            self.update_weight()
 
-    def display_weight(self):
+    def update_weight(self, weight: str | int | float | None = None):
         """
         Clears any current weight and then displays the weight is not none.
 
         Use weight_config dict to send options to the Text object.
 
         Use bg_config dict to send options to the background Rectangle object.
+
+        Parameters
+        ----------
+        weight
+            The new weight of the edge to display
+
         """
+
+        # Set the new weight if it is present
+        if weight is not None:
+            self.weight = weight
+
         self.submobjects.clear()
 
         point = self.point_from_proportion(self.alpha)
