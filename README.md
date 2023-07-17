@@ -124,11 +124,14 @@ and we get
 
 Inside the examples folder, you can find some examples of how to use the plugin with different types of graphs, both undirected and directed. You can see how to configure different options for the weight label and the background. Check them out!
 
-![](examples/examples_assets/PartiteGraph.mp4)
 
-![](examples/examples_assets/MovingDiGraph.mp4)
 
-![](examples/examples_assets/CustomDiGraph.mp4)
+https://github.com/mutable-learning/manim-weighted-line/assets/112732721/92efecf1-097f-4431-aa12-d1f7030abe36
+
+https://github.com/mutable-learning/manim-weighted-line/assets/112732721/70c08377-817d-4a93-b2f7-2b5d94e52bae
+
+https://github.com/mutable-learning/manim-weighted-line/assets/112732721/54ce7490-a04e-4842-9c4f-4c35e83d128e
+
 
 ## How to contact
 You can open issues and pull requests, but if you want to contact me directly you can go to:
