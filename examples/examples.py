@@ -30,7 +30,7 @@ class PartiteGraph(Scene):
             edge_config=edge_conf,
         )
 
-        self.add(graph)
+        self.play(FadeIn(graph), run_time=2)
 
 
 # In the custom di-graph below one of the edges has the
