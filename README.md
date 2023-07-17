@@ -124,6 +124,12 @@ and we get
 
 Inside the examples folder, you can find some examples of how to use the plugin with different types of graphs, both undirected and directed. You can see how to configure different options for the weight label and the background. Check them out!
 
+![](examples/examples_assets/PartiteGraph.mp4)
+
+![](examples/examples_assets/MovingDiGraph.mp4)
+
+![](examples/examples_assets/CustomDiGraph.mp4)
+
 ## How to contact
 You can open issues and pull requests, but if you want to contact me directly you can go to:
 - Email: MutableLearning@gmail.com
